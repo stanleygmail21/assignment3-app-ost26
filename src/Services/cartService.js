@@ -2,10 +2,10 @@ export async function getCart()  {
     return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'GET',
-       // mode: 'cors',
+       mode: 'cors',
         headers: { 
-        "Content-Type": "application/json"
-        //"Access-Control-Allow-Origin":"https://34.204.15.216:8000/cartOst26"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":"${process.env.REACT_APP_API_BASE_URL}cartOst26"
         
         },
     })
@@ -16,10 +16,10 @@ export async function addItem(data)  {
     return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'POST',
-       // mode: 'cors',
+       mode: 'cors',
         headers: { 
-        "Content-Type": "application/json"
-        //"Access-Control-Allow-Origin":"https://34.204.15.216:8000/cartOst26"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":"${process.env.REACT_APP_API_BASE_URL}/cartOst26"
         },
         body: JSON.stringify(data)
     })
@@ -30,10 +30,10 @@ export async function deleteItem(data)  {
     return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'DELETE',
-       // mode: 'cors',
+       mode: 'cors',
         headers: { 
-        "Content-Type": "application/json"
-        //"Access-Control-Allow-Origin":"https://34.204.15.216:8000/cartOst26"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":"${process.env.REACT_APP_API_BASE_URL}/cartOst26"
         },
         body: JSON.stringify(data)
     })
@@ -44,10 +44,10 @@ export async function checkout(data)  {
     return fetch(`${process.env.REACT_APP_API_BASE_URL}/checkoutOst26`,
     {
         method: 'POST',
-       // mode: 'cors',
+        mode: 'cors',
         headers: { 
-        "Content-Type": "application/json"
-      //  "Access-Control-Allow-Origin":"https://34.204.15.216:8000/checkoutOst26"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":"${process.env.REACT_APP_API_BASE_URL}/checkoutOst26"
         },
         body: JSON.stringify(data)
     })
