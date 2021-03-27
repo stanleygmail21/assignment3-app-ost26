@@ -1,11 +1,11 @@
 async function getInventory()  {
-    return fetch(`http://localhost:8000/inventoryOst26`,
+    return fetch(`http://34.204.15.216:8000/inventoryOst26`,
     {
         method: 'GET',
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":"http://localhost:8000/inventoryOst26"
+        "Access-Control-Allow-Origin":"http://34.204.15.216:8000/inventoryOst26"
         
         }
     })
