@@ -1,11 +1,11 @@
 export async function getCart()  {
-    return fetch(`http://34.204.15.216:8000/cartOst26`,
+    return fetch(`https://34.204.15.216:8000/cartOst26`,
     {
         method: 'GET',
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":"http://34.204.15.216:8000/cartOst26"
+        "Access-Control-Allow-Origin":"https://34.204.15.216:8000/cartOst26"
         
         },
     })
@@ -13,13 +13,13 @@ export async function getCart()  {
 }
 
 export async function addItem(data)  {
-    return fetch(`http://34.204.15.216:8000/cartOst26`,
+    return fetch(`https://34.204.15.216:8000/cartOst26`,
     {
         method: 'POST',
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":"http://34.204.15.216:8000/cartOst26"
+        "Access-Control-Allow-Origin":"https://34.204.15.216:8000/cartOst26"
         },
         body: JSON.stringify(data)
     })
@@ -27,13 +27,13 @@ export async function addItem(data)  {
 }
 
 export async function deleteItem(data)  {
-    return fetch(`http://34.204.15.216:8000/cartOst26`,
+    return fetch(`https://34.204.15.216:8000/cartOst26`,
     {
         method: 'DELETE',
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":"http://34.204.15.216:8000/cartOst26"
+        "Access-Control-Allow-Origin":"https://34.204.15.216:8000/cartOst26"
         },
         body: JSON.stringify(data)
     })
@@ -41,13 +41,13 @@ export async function deleteItem(data)  {
 }
 
 export async function checkout(data)  {
-    return fetch(`http://34.204.15.216:8000/checkoutOst26`,
+    return fetch(`https://34.204.15.216:8000/checkoutOst26`,
     {
         method: 'POST',
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":"http://34.204.15.216:8000/checkoutOst26"
+        "Access-Control-Allow-Origin":"https://34.204.15.216:8000/checkoutOst26"
         },
         body: JSON.stringify(data)
     })
