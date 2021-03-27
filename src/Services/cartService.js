@@ -5,7 +5,7 @@ export async function getCart()  {
        mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`${process.env.REACT_APP_API_BASE_URL}cartOst26`
+        "Access-Control-Allow-Origin":`*`
         
         },
     })
@@ -19,7 +19,7 @@ export async function addItem(data)  {
        mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`${process.env.REACT_APP_API_BASE_URL}/cartOst26`
+        "Access-Control-Allow-Origin":`*`
         },
         body: JSON.stringify(data)
     })
@@ -33,7 +33,7 @@ export async function deleteItem(data)  {
        mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`${process.env.REACT_APP_API_BASE_URL}/cartOst26`
+        "Access-Control-Allow-Origin":`*`
         },
         body: JSON.stringify(data)
     })
@@ -47,7 +47,7 @@ export async function checkout(data)  {
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`${process.env.REACT_APP_API_BASE_URL}/checkoutOst26`
+        "Access-Control-Allow-Origin":`*`
         },
         body: JSON.stringify(data)
     })
