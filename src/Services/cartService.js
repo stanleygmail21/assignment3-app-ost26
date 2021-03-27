@@ -1,5 +1,5 @@
 export async function getCart()  {
-    return fetch(`https://34.204.15.216:8000/cartOst26`,
+    return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'GET',
        // mode: 'cors',
@@ -13,7 +13,7 @@ export async function getCart()  {
 }
 
 export async function addItem(data)  {
-    return fetch(`https://34.204.15.216:8000/cartOst26`,
+    return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'POST',
        // mode: 'cors',
@@ -27,7 +27,7 @@ export async function addItem(data)  {
 }
 
 export async function deleteItem(data)  {
-    return fetch(`https://34.204.15.216:8000/cartOst26`,
+    return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'DELETE',
        // mode: 'cors',
@@ -41,7 +41,7 @@ export async function deleteItem(data)  {
 }
 
 export async function checkout(data)  {
-    return fetch(`https://34.204.15.216:8000/checkoutOst26`,
+    return fetch(`${process.env.REACT_APP_API_BASE_URL}/checkoutOst26`,
     {
         method: 'POST',
        // mode: 'cors',
