@@ -5,7 +5,7 @@ async function getInventory()  {
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`${process.env.REACT_APP_API_BASE_URL}inventoryOst26`
+        "Access-Control-Allow-Origin":`*`
         
         }
     })
