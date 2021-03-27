@@ -1,11 +1,11 @@
 export async function getCart()  {
-    return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
+    return fetch(`${process.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'GET',
        mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`*`
+        "Access-Control-Allow-Origin":`${process.REACT_APP_API_BASE_URL}cartOst26`
         
         },
     })
@@ -13,13 +13,13 @@ export async function getCart()  {
 }
 
 export async function addItem(data)  {
-    return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
+    return fetch(`${process.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'POST',
        mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`*`
+        "Access-Control-Allow-Origin":`${process.REACT_APP_API_BASE_URL}cartOst26`
         },
         body: JSON.stringify(data)
     })
@@ -27,13 +27,13 @@ export async function addItem(data)  {
 }
 
 export async function deleteItem(data)  {
-    return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
+    return fetch(`${process.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'DELETE',
        mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`*`
+        "Access-Control-Allow-Origin":`${process.REACT_APP_API_BASE_URL}cartOst26`
         },
         body: JSON.stringify(data)
     })
@@ -41,13 +41,13 @@ export async function deleteItem(data)  {
 }
 
 export async function checkout(data)  {
-    return fetch(`${process.env.REACT_APP_API_BASE_URL}/checkoutOst26`,
+    return fetch(`${process.REACT_APP_API_BASE_URL}/checkoutOst26`,
     {
         method: 'POST',
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`*`
+        "Access-Control-Allow-Origin":`${process.REACT_APP_API_BASE_URL}/checkoutOst26`
         },
         body: JSON.stringify(data)
     })
