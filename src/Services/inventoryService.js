@@ -1,6 +1,6 @@
 async function getInventory()  {
-    return fetch(`https://34.204.15.216:8000/inventoryOst26`,
-    {
+    return fetch(`${process.env.REACT_APP_API_BASE_URL}inventoryOst26`,
+    { 
         method: 'GET',
         //mode: 'cors',
         headers: { 
