@@ -2,10 +2,10 @@ async function getInventory()  {
     return fetch(`${process.env.REACT_APP_API_BASE_URL}inventoryOst26`,
     { 
         method: 'GET',
-        //mode: 'cors',
+        mode: 'cors',
         headers: { 
-        "Content-Type": "application/json"
-       // "Access-Control-Allow-Origin":"https://34.204.15.216:8000/inventoryOst26"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":"${process.env.REACT_APP_API_BASE_URL}inventoryOst26"
         
         }
     })
