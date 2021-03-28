@@ -41,13 +41,13 @@ export async function deleteItem(data)  {
 }
 
 export async function checkout(data)  {
-    return fetch(`${process.env.REACT_APP_API_BASE_URL}/checkoutOst26`,
+    return fetch(`${process.env.REACT_APP_API_BASE_URL}checkoutOst26`,
     {
         method: 'POST',
         mode: 'cors',
         headers: { 
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":`${process.env.REACT_APP_API_BASE_URL}/checkoutOst26`
+        "Access-Control-Allow-Origin":`${process.env.REACT_APP_API_BASE_URL}checkoutOst26`
         },
         body: JSON.stringify(data)
     })
