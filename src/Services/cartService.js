@@ -27,7 +27,7 @@ export async function addItem(data)  {
 }
 
 export async function deleteItem(data)  {
-    return fetch(`${process.REACT_APP_API_BASE_URL}cartOst26`,
+    return fetch(`${process.env.REACT_APP_API_BASE_URL}cartOst26`,
     {
         method: 'DELETE',
        mode: 'cors',
